@@ -1,1 +1,355 @@
-<h1>Github page de splitter</h1>
+<!DOCTY<!-- HTML -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Albala - Pueblo con encanto</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap">
+  <style>
+    /* CSS */
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    .header h1 {
+      margin: 0;
+    }
+    .nav {
+      background-color: #444;
+      padding: 10px;
+      text-align: center;
+    }
+    .nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 20px;
+    }
+    .nav a:hover {
+      color: #ccc;
+    }
+    .main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .card {
+      margin: 20px;
+      width: 300px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+    }
+    .card h2 {
+      margin-top: 0;
+    }
+    .card p {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1>Albala - Pueblo con encanto</h1>
+  </header>
+  <!-- Nav -->
+  <nav class="nav">
+    <a href="#inicio">Inicio</a>
+    <a href="#lugares">Lugares de interés</a>
+    <a href="#eventos">Eventos</a>
+    <a href="#Bares">Bares</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <!-- Main -->
+  <main class="main">
+    <!-- Card 1 -->
+    <div class="card">
+      <img src="https://www.verpueblos.com/fotos_originales/2/1/1/00056211.jpg" alt="Imagen de Albala">
+      <h2>Plaza del pueblo</h2>
+      <p>La plaza del pueblo es el corazón de Albala, donde se celebran eventos y fiestas.</p>
+    </div>
+    <!-- Card 2 -->
+    <div class="card">
+      <img src="https://www.verpueblos.com/fotos_reducidas/2/9/6/01713296.jpg" alt="Imagen de Albala">
+      <h2>Iglesia de Santa Magdalena</h2>
+      <p>Iglesia parroquial consagrada a Santa María Magdalena, realizada durante el tercer cuarto del siglo XVI</p>
+    </div>
+    <!-- Card 3 -->
+    <div class="card">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh14e-D1EIkBdqfIXZA9F3uVO_BfauDvEzEWI6pDF070uVLR2168-73a6qUFfwjiyNmSwSTbCgM9Apidt_QOqtvZT3IGaM0U92pk0h2SzZeCiveMSEazL3BXqPiLzLruQC8SKfhWsiABKTk/s1600/DSC_0309+quintos+y+tablas+blog.jpg" alt="Imagen de Albala">
+      <h2>Festival de las tablas</h2>
+      <p>El festival de la vendimia es un evento anual que celebra la cosecha de uvas en Albala.</p>
+    </div>
+  </main>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Albala - Pueblo con encanto</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Agregamos un evento de click a los enlaces del nav
+    document.querySelectorAll('.nav a').forEach((link) => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = e.target.getAttribute('href');
+        document.querySelector(target).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+
+
+<!-- Sección de inicio -->
+<section id="inicio">
+  <h2>Bienvenidos a Albala</h2>
+  <p>Albala es un pueblo con encanto ubicado en el corazón de la región. Conoce nuestra historia, nuestra cultura y nuestros lugares de interés.</p>
+  <button class="btn-ver-mas">Ver más</button>
+  <div class="inicio-container">
+    <div class="inicio-item">
+      <i class="fas fa-history"></i>
+      <h3>Nuestra historia</h3>
+      <p>Albala tiene una rica historia que se remonta al siglo XVI. Conoce nuestros orígenes y evolución.</p>
+    </div>
+    <div class="inicio-item">
+      <i class="fas fa-palette"></i>
+      <h3>Nuestra cultura</h3>
+      <p>Albala es conocido por su rica cultura y tradiciones. Conoce nuestros festivales, música y arte.</p>
+    </div>
+    <div class="inicio-item">
+      <i class="fas fa-map-marker-alt"></i>
+      <h3>Nuestros lugares de interés</h3>
+      <p>Albala cuenta con una variedad de lugares de interés, desde la iglesia de San Pedro hasta la plaza del pueblo.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Estilos adicionales para la sección de inicio -->
+<style>
+  #inicio {
+    background-color: #f9f9f9;
+    padding: 40px;
+  }
+  .inicio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .inicio-item {
+    margin: 20px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+  }
+  .inicio-item i {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .btn-ver-mas {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .btn-ver-mas:hover {
+    background-color: #444;
+  }
+</style>
+
+<!-- JavaScript para mostrar/ocultar la sección de inicio -->
+<script>
+  const btnVerMas = document.querySelector('.btn-ver-mas');
+  const inicioContainer = document.querySelector('.inicio-container');
+
+  btnVerMas.addEventListener('click', () => {
+    inicioContainer.classList.toggle('show');
+  });
+</script>
+
+
+
+<!-- Sección de lugares de interés -->
+<section id="lugares">
+  <h2>Lugares de interés en Albala</h2>
+  <p>Albala cuenta con una variedad de lugares de interés que te harán disfrutar de tu visita.</p>
+  <div class="lugares-container">
+    <div class="lugar">
+      <img src="img/iglesia-san-pedro.jpg" alt="Iglesia de San Pedro">
+      <h3>Iglesia de San Pedro</h3>
+      <p>La iglesia de San Pedro es un lugar emblemático de Albala, con una arquitectura impresionante y una historia rica.</p>
+    </div>
+    <div class="lugar">
+      <img src="img/plaza-del-pueblo.jpg" alt="Plaza del Pueblo">
+      <h3>Plaza del Pueblo</h3>
+      <p>La plaza del pueblo es el corazón de Albala, donde se celebran eventos y festivales durante todo el año.</p>
+    </div>
+    <div class="lugar">
+      <img src="img/museo-de-albala.jpg" alt="Museo de Albala">
+      <h3>Museo de Albala</h3>
+      <p>El museo de Albala es un lugar ideal para conocer la historia y la cultura de la región.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Estilos adicionales para la sección de lugares de interés -->
+<style>
+  #lugares {
+    background-color: #f9f9f9;
+    padding: 40px;
+  }
+  .lugares-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .lugar {
+    margin: 20px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+  }
+  .lugar img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+</style>
+
+
+<!-- Sección de eventos -->
+<section id="eventos">
+  <h2>Eventos en Albala</h2>
+  <p>Albala es un pueblo con una vida cultural y festiva intensa. ¡No te pierdas nuestros eventos!</p>
+  <div class="eventos-container">
+    <div class="evento">
+      <h3>Fiesta de la Vendimia</h3>
+      <p>La fiesta de la vendimia es un evento anual que celebra la cosecha de uvas en la región.</p>
+      <p><strong>Fecha:</strong> 15 de septiembre</p>
+    </div>
+    <div class="evento">
+      <h3>Festival de Música de Albala</h3>
+      <p>El festival de música de Albala es un evento que reúne a músicos de toda la región para celebrar la música en vivo.</p>
+      <p><strong>Fecha:</strong> 20 de julio</p>
+    </div>
+    <div class="evento">
+      <h3>Feria de Artesanías</h3>
+      <p>La feria de artesanías es un evento que celebra la creatividad y la habilidad de los artesanos locales.</p>
+      <p><strong>Fecha:</strong> 10 de octubre</p>
+    </div>
+  </div>
+</section>
+
+<!-- Estilos adicionales para la sección de eventos -->
+<style>
+  #eventos {
+    background-color: #f9f9f9;
+    padding: 40px;
+  }
+  .eventos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .evento {
+    margin: 20px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+  }
+</style>
+
+
+<!-- Sección de restauración -->
+<section id="Bares">
+  <h2>Bares de Albala</h2>
+  <p>La gastronomía de Albala es conocida por sus deliciosos platos típicos y sus productos frescos.</p>
+  <div class="gastronomia-container">
+    <div class="plato">
+      <img src="img/tortilla-de-patatas.jpg" alt="Tortilla de patatas">
+      <h3>Tortilla de patatas</h3>
+      <p>La tortilla de patatas es un plato típico de Albala, hecho con patatas frescas y huevos.</p>
+    </div>
+    <div class="plato">
+      <img src="img/paella-valenciana.jpg" alt="Paella valenciana">
+      <h3>Paella valenciana</h3>
+      <p>La paella valenciana es un plato emblemático de la región, hecho con arroz, verduras y carne.</p>
+    </div>
+    <div class="plato">
+      <img src="img/vino-de-albala.jpg" alt="Vino de Albala">
+      <h3>Vino de Albala</h3>
+      <p>El vino de Albala es un producto fresco y de alta calidad, perfecto para acompañar cualquier comida.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Estilos adicionales para la sección de gastronomía -->
+<style>
+  #gastronomia {
+    background-color: #f9f9f9;
+    padding: 40px;
+  }
+  .gastronomia-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .plato {
+    margin: 20px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+  }
+  .plato img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+</style>
+
+
+<!-- Sección de contacto -->
+<section id="contacto">
+  <h2>Contacto</h2>
+  <p>¿Quieres saber más sobre Albala o tienes alguna pregunta? ¡No dudes en contactarnos!</p>
+  <form>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre"><br><
+
+
+</body>
+</html>
+</html>
